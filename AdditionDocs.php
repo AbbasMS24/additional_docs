@@ -14,5 +14,6 @@ class AdditionDoc extends Model
         'data',
         'time',
         'officer'
+        
     ];
 }

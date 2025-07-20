@@ -19,8 +19,8 @@ class AdditionDocsController extends Controller
 
         // ذخیره فایل
         $path = $request->file('file')->storeAs(
-            'addition_docs',
-            $request->tracking_code . '_' . time() . '.' . $request->file('file')->getClientOriginalExtension(),
+            'addition_docs/' . $request->tr_code,
+            $request->title . '.' . $request->file('file')->getClientOriginalExtension(),
             'public'
         );
 
